@@ -1,7 +1,7 @@
 import os
 import cv2
 
-path = "Images/"
+path = "C:/Project 105 - Video Album/Imagens"
 images = []
 
 for file in os.listdir(path):
@@ -26,3 +26,5 @@ for i in range(0,count -1):
     frame = cv2.imread(images[i])
     out.write(frame)
 out.release()
+
+print("Concluido")
